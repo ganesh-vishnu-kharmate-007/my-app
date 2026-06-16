@@ -45,7 +45,7 @@ export const TimerSettingsProvider: React.FC<{ children: React.ReactNode }> = ({
     };
      setHistory([...history,newSession]);
 
-  }, [setHistory]);
+  }, [setHistory ,history]);
   // CALLBACK HOOK: Wipes out the history storage block completely
   const clearHistory = useCallback(() => {
     setHistory([]);
